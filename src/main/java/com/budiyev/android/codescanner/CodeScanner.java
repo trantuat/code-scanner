@@ -601,8 +601,8 @@ public final class CodeScanner {
                     Utils.setFlashMode(parameters, Parameters.FLASH_MODE_OFF);
                 }
                 camera.setParameters(parameters);
-                camera.setPreviewCallback(null);
                 camera.stopPreview();
+                camera.setPreviewCallback(null);
             }
         } catch (final Exception ignored) {
         }
